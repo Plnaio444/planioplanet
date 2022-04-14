@@ -7,6 +7,52 @@
     <title>홈태그연습</title>
 </head>
 <body>
+    <h3>로그인</h3>
+    <form action="iogin.php" method="get" target="blank">
+    <p>
+        아이디: <input type="text" name="id">
+    </p>
+    <p>
+        비밀번호: <input type="password" name="pwd">
+    </p>
+    <p>
+        자기소개: <textarea name="self" id="" cols="20" rows="5"></textarea>
+    </p>
+    <p>
+        나라: <input type="text" list="con" name="nation">
+            <datalist id="con">
+                <option value="한국"></option>
+                <option value="중국"></option>
+                <option value="미국"></option>
+            </datalist>
+    </p>
+    <p>
+        가고싶은곳: <input type="text" list="tourlist" name="area">
+            <datalist id="tourlist">
+                <option value="부산"></option>
+                <option value="몰디브"></option>
+                <option value="인도"></option>
+                <option value="아이오니아"></option>
+        </datalist>
+    </p>
+    <p>
+        성별: 여<input type="radio" name="sung" value="girl"> 
+        남<input type="radio" name="sung" value="boy">
+    </p>
+    <p>
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+        <button type="submit">전송</button>
+    </p>
+    <p>
+        취미: 운동<input type="checkbox" name="hob" value="sports" checked>
+        
+        등산<input type="checkbox" name="hob" value="hiking">
+        요리<input type="checkbox" name="hob" value="cooking">
+        <input type="color" value="#ccff33">
+    </p>
+    </form>
+
     
 </body>
 </html>
