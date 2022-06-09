@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치정하기</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            text-align: center;
+            padding-top: 30px;
+        }
+        #relh:hover {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+
+        #relk:hover {
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+        p {
+            border: 1px solid;
+            overflow: hidden;
+            width: 15em;
+            height: 3em;
+        }
+        #vis {
+            border: 1px solid;
+            overflow: visible;
+            width: 15em;
+            height: 3em;
+        }
+        #scr {
+            border: 1px solid;
+            overflow: scroll;
+            width: 15em;
+            height: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div>T</div>
+    <div id="relh">H</div>
+    <div>A</div>
+    <div>N</div>
+    <div id="relk">K</div>
+    <div>S</div>
+
+    <hr>
+    <h3>overflow</h3>
+    <hr>
+
+    <p id="hidden">overflow에 hidden값을 적용하면 박스를 넘어가는 내용이 잘려 출력됩니다</p>
+    <p id="vis">overflow에 visible값을 적용하면 콘텐트가 박스를 넘어가서도 출력됩니다</p>
+    <p id="scr">overflow에 scroll값을 적용하면 콘텐트가 박스를 넘어가서도 출력됩니다</p>
+</body>
+</html>
